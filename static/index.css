@@ -84,10 +84,15 @@
     }
     /* Container on top, left of the page */
     .myStats {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: #140e38;
         color: white;
         position: relative;
         z-index:999;
+        padding: 10px;
+    }
+    .myStats tr {
+        display: flex;
+        align-items: center;
     }
     /* Some CSS will always be overwritten, avoiding it with all: initial; */
     .myStatsHeader {
@@ -126,7 +131,7 @@
         width:100%;
         position:absolute;
         bottom:0.0%;
-        background:black;
+        background:#140e38;
         opacity:0.6;
         z-index:999;
     }

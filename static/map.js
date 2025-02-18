@@ -1,5 +1,5 @@
 var base = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '<a href="https://www.openstreetmap.org/copyright">&copy OpenStreetMap</a> <a href="https://carto.com/attributions">&copy CARTO</a>',
+        attribution: false,
         detectRetina: true,
         subdomains: 'abcd',
         minZoom: 2,
@@ -422,10 +422,10 @@ function connectWebSocket() {
   const webSock = new WebSocket(WS_HOST);
 
   webSock.onopen = function () {
-    // Log connection success and display "T-Pot Honeypot Stats" title in green, so we know connection is established
+    // Log connection success and display "CONNECTED" title in green, so we know connection is established
     var honeypotStatsHeader = document.getElementById("honeypotStatsHeader");
     honeypotStatsHeader.style.color = "green";
-    honeypotStatsHeader.textContent = "T-Pot Honeypot Stats"
+    honeypotStatsHeader.textContent = "CONNECTED"
     console.log('[*] WebSocket connection established.');
   };
 
@@ -445,11 +445,11 @@ function connectWebSocket() {
      else if(event.code == 1011) reason = "[ ] Endpoint terminating connection: Server encountered an unexpected condition";
      else if(event.code == 1015) reason = "[ ] Endpoint terminating connection: Connection closed due TLS handshake failure";
      else reason = "[ ] Endpoint terminating connection; Unknown reason";
-     // Log error and display "T-Pot Honeypot Stats" title in red, so we know connection is interrupted
+     // Log error and display "CONNECTED" title in red, so we know connection is interrupted
      console.log(reason+'. Attempting to reconnect ...');
      var honeypotStatsHeader = document.getElementById("honeypotStatsHeader");
      honeypotStatsHeader.style.color = "red";
-     honeypotStatsHeader.textContent = "T-Pot Honeypot Stats"
+     honeypotStatsHeader.textContent = "CONNECTED"
      setTimeout(connectWebSocket, 5000); // Wait 5 seconds and attempt to reconnect
   };
 

@@ -137,7 +137,7 @@
 	pointer-events: none;
 	}
 .leaflet-top {
-	top: 0;
+	top: 33px;
 	}
 .leaflet-right {
 	right: 0;
@@ -409,6 +409,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	background: #fff;
 	background: rgba(255, 255, 255, 0.8);
 	margin: 0;
+	display: none;
 	}
 .leaflet-control-attribution,
 .leaflet-control-scale-line {
