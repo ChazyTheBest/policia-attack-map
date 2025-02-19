@@ -84,7 +84,7 @@
     }
     /* Container on top, left of the page */
     .myStats {
-        background-color: #140e38;
+        background-color: #001538;
         color: white;
         position: relative;
         z-index:999;
@@ -131,7 +131,7 @@
         width:100%;
         position:absolute;
         bottom:0.0%;
-        background:#140e38;
+        background:#001538;
         opacity:0.6;
         z-index:999;
     }
