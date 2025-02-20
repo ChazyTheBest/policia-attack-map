@@ -90,6 +90,9 @@
         z-index:999;
         padding: 10px;
     }
+    .myStats table {
+        width: 100%;
+    }
     .myStats tr {
         display: flex;
         align-items: center;
@@ -125,6 +128,10 @@
         text-align:right;
         margin-left: 40px;
         text-align:right
+    }
+    .myStatsHeaderRight {
+        margin-left: auto;
+        font-size: 9px;
     }
     .container-fluid {
         height:27%;
